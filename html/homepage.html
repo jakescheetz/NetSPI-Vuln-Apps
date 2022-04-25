@@ -2,30 +2,59 @@
 <html>
     <head>
         <title>Homepage Title</title>
+        <style type="text/css" >
+            table{
+                border: 1px solid rgb(230, 126, 29);
+            }
+
+            td{
+                border: 1px solid rgb(230, 126, 29);
+            }
+
+        </style>
     </head>
 </html>
 <body>
 
-<h1>Header place holder text</h1>
-<h2>Header place holder text</h2>
-<h3>Header place holder text</h3>
-<h4>Header place holder text</h4>
-<h5>Header place holder text</h5>
-<h6>Header place holder text</h6>
+<h1>Welcome to Coffee Shop</h1>
 
 
+<!--Create a table that has information about the coffee being sold-->
+<div>
+    <table>
+        <thead>
+            <th>Coffee Origin</th>
+            <th>Coffee strength</th>
+            <th>Coffee Price</th>
+        </thead>
 
+        <tr>
+            <td>Guatemala</td>
+            <td>Strongest</td>
+            <td>Moderate</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Strong</td>
+            <td>Expensive</td>
+        </tr>
 
-<p>
-Testing a paragraph
-</p>
+        <tr>
+           <td>Germany</td>
+           <td>Mild</td>
+           <td>Cheap</td>
+        </tr>
+    </table>
+</div>
+
 <hr width="100%" >
 
+<!--Register user for the coffee shop-->
 <h1>Registration form</h1>
 <div id="reg-from">
     <form>
         <label for="first-name">First Name: </label>
-        <input type="text" name="first-name" aria-placeholder="Aryya" aria-required="true">
+        <input type="text" name="first-name" required>
 
         <label for="last-name">Last Name: </label>
         <input type="text" name="last-name" aria-placeholder="Aryya" aria-required="true">
@@ -33,9 +62,53 @@ Testing a paragraph
         <div>
             <label for="coffee-drinker">Heavy Coffee drinker</label>
             <input type="radio" name="coffee-drinker" value="Choice-1">
+            <div></div>
+
+            <label for="coffee-drinker">Average Coffee drinker</label>
+            <input type="radio" name="coffee-drinker" value="Choice-2">
+            <div></div>
+            <label for="coffee-drinker">Light Coffee dcoffee-drinker
+            <input type="radio" name="coffee-drinker" value="Choice-3">
+            <div></div>
+            <label for="coffee-drinker">Never drink coffee</label>
+            <input type="radio" name="coffee-drinker" value="Choice-4">
 
 
         </div>
+
+        <!--Take Email address and password-->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" >
+
+            <label for="password">password</label>
+            <input type="password" name="password">
+        </div>
+
+        <div>
+
+            <label for="month"> Birthday</label>
+            <select name="month">
+                <option value="0" selected disabled>Month</option>
+                <option value="jan">January</option>
+                <option value="feb">Febuary</option>
+                <option value="march">March</option>
+                <option value="april">april</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="aug ">August</option>
+                <option value="sept">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+            </select>
+            <label for="agree">I have read/accepted the terms and conditions of this application</label>
+            <input type="checkbox" name="agree">
+            <button type="submit">Submit Registration</button>
+
+        </div>
+        
 
 
     </form>
